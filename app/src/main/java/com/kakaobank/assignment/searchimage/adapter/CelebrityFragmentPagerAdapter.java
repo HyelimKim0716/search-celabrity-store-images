@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class ImageFragmentPagerAdapter extends FragmentPagerAdapter {
-    public ImageFragmentPagerAdapter(FragmentManager fm) {
+public class CelebrityFragmentPagerAdapter extends FragmentPagerAdapter {
+    public CelebrityFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

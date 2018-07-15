@@ -44,10 +44,10 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case FRAGMENT_SEARCH_IMAGE_POSITION:
-                title = "Search Image";
+                title = "Search ImageResult";
                 break;
             case FRAGMENT_STORE_IMAGE_POSITION:
-                title = "Store Image";
+                title = "Store ImageResult";
                 break;
 
         }

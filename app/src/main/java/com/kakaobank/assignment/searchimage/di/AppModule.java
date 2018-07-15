@@ -3,6 +3,8 @@ package com.kakaobank.assignment.searchimage.di;
 import android.app.Application;
 import android.content.Context;
 
+import com.kakaobank.assignment.searchimage.common.App;
+
 import javax.inject.Named;
 import javax.inject.Singleton;
 

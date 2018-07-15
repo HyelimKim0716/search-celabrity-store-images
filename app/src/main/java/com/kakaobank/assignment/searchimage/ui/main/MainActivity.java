@@ -9,17 +9,21 @@ import android.support.v4.view.ViewPager;
 import com.kakaobank.assignment.searchimage.R;
 import com.kakaobank.assignment.searchimage.base.BaseDataBindingActivity;
 import com.kakaobank.assignment.searchimage.databinding.ActivityMainBinding;
-import com.kakaobank.assignment.searchimage.ui.main.search_image.SearchImageFragment;
+import com.kakaobank.assignment.searchimage.ui.main.search_celebrity.SearchCelebrityFragment;
+import com.kakaobank.assignment.searchimage.ui.main.store_celebrity.StoreCelebrityFragment;
 
 import javax.inject.Inject;
 
 public class MainActivity extends BaseDataBindingActivity<ActivityMainBinding> {
 
     @Inject
-    MainViewModel viewModel;
+    MainViewModel mViewModel;
 
     @Inject
-    SearchImageFragment searchImageFragment;
+    SearchCelebrityFragment mSearchCelebrityFragment;
+
+    @Inject
+    StoreCelebrityFragment mStoreCelebrityFragment;
 
     @Override
     public void setLayoutId() {
@@ -35,8 +39,8 @@ public class MainActivity extends BaseDataBindingActivity<ActivityMainBinding> {
 
         MainFragmentPagerAdapter fragmentPagerAdapter = new MainFragmentPagerAdapter(getSupportFragmentManager());
         fragmentPagerAdapter.clearFragment();
-        fragmentPagerAdapter.addFragment(searchImageFragment);
-        fragmentPagerAdapter.addFragment(new SearchImageFragment());
+        fragmentPagerAdapter.addFragment(mSearchCelebrityFragment);
+        fragmentPagerAdapter.addFragment(mStoreCelebrityFragment);
         viewPager.setAdapter(fragmentPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }

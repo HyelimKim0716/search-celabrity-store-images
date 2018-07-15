@@ -1,4 +1,4 @@
-package com.kakaobank.assignment.searchimage.model.image;
+package com.kakaobank.assignment.searchimage.data.model;
 
 public class Meta {
     private long total_count;

@@ -1,6 +1,9 @@
 package com.kakaobank.assignment.searchimage.di;
 
-import com.kakaobank.assignment.searchimage.ui.main.search_image.SearchImageFragment;
+import com.kakaobank.assignment.searchimage.ui.main.search_celebrity.SearchCelebrityFragment;
+import com.kakaobank.assignment.searchimage.ui.main.store_celebrity.StoreCelebrityFragment;
+
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -9,7 +12,14 @@ import dagger.Provides;
 class ViewPagerAdapterModule {
 
     @Provides
-    SearchImageFragment provideSearchImageFragment() {
-        return new SearchImageFragment();
+    @Singleton
+    SearchCelebrityFragment provideSearchImageFragment() {
+        return new SearchCelebrityFragment();
+    }
+
+    @Provides
+    @Singleton
+    StoreCelebrityFragment provideStoreImageFragment() {
+        return new StoreCelebrityFragment();
     }
 }

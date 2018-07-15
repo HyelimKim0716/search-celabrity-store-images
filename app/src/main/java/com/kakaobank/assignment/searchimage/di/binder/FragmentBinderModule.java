@@ -1,7 +1,9 @@
 package com.kakaobank.assignment.searchimage.di.binder;
 
-import com.kakaobank.assignment.searchimage.di.ui.SearchImageModule;
-import com.kakaobank.assignment.searchimage.ui.main.search_image.SearchImageFragment;
+import com.kakaobank.assignment.searchimage.di.ui.SearchCelebrityModule;
+import com.kakaobank.assignment.searchimage.di.ui.StoreCelebrityModule;
+import com.kakaobank.assignment.searchimage.ui.main.search_celebrity.SearchCelebrityFragment;
+import com.kakaobank.assignment.searchimage.ui.main.store_celebrity.StoreCelebrityFragment;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -9,6 +11,10 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class FragmentBinderModule {
 
-    @ContributesAndroidInjector(modules = {SearchImageModule.class})
-    public abstract SearchImageFragment provideSearchImageFragment();
+    @ContributesAndroidInjector(modules = {SearchCelebrityModule.class})
+    public abstract SearchCelebrityFragment provideSearchImageFragment();
+
+    @ContributesAndroidInjector(modules = {StoreCelebrityModule.class})
+    public abstract StoreCelebrityFragment provideStoreImageFragment();
+
 }

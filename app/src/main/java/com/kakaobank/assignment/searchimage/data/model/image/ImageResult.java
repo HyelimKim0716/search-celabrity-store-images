@@ -1,13 +1,15 @@
-package com.kakaobank.assignment.searchimage.model.image;
+package com.kakaobank.assignment.searchimage.data.model.image;
+
+import com.kakaobank.assignment.searchimage.data.model.Meta;
 
 import java.util.List;
 
-public class Image {
+public class ImageResult {
 
-    private Meta meta;
-    private List<Document> documents;
+    public Meta meta;
+    public List<Document> documents;
 
-    public Image(Meta meta, List<Document> documents) {
+    public ImageResult(Meta meta, List<Document> documents) {
         this.meta = meta;
         this.documents = documents;
     }

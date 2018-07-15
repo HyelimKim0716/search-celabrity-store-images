@@ -1,4 +1,4 @@
-package com.kakaobank.assignment.searchimage.model.image;
+package com.kakaobank.assignment.searchimage.data.model.image;
 
 public class Document {
     private String collection;
